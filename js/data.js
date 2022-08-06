@@ -3,8 +3,8 @@ let urlHome = "https://elchinx.github.io/CumpleChinx";
 var url = {          
           // "sprite":"https://webchinx.000webhostapp.com/media/pj/chinxtest/base.png",
           "chinx_sprite":urlHome+"/media/pj/chinx/chinx.png",
-          "shinx_gif":"https://github.com/ElChinx/CumpleChinx/blob/main/media/shinx.gif?raw=true",
-          "bg_dark":"https://raw.githubusercontent.com/ElChinx/CumpleChinx/main/media/bg/dark.png",
+          "shinx_gif":urlHome+"/media/shinx.gif",
+          "bg_dark":urlHome+"/media/bg/dark.png",
           "bg_email":urlHome+"/media/bg/1.png",
           "bg_emailopen":urlHome+"/media/bg/2.png",
           "bg_door":urlHome+"/media/bg/door.png",
