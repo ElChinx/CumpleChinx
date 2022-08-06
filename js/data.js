@@ -175,6 +175,7 @@ var hbd =
      ['Cuando termines de leer la linea, presiona la pantalla y continuaras','',''],
      ['Si deseas volver a activarlo vuelve a presionar el boton OFF ahora naranja ','',''],
      ['Pero se desactivará si tocas la pantalla','',''],
+     ['Cualquier error que suceda, por favor házmelo saber','',''],
      ['Espero haber sido muy claro en esto','',''],
      ['Continuemos','',''],
      // Historia ya
