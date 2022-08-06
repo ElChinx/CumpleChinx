@@ -3,7 +3,7 @@ let urlHome = "https://elchinx.github.io/CumpleChinx";
 var url = {          
           // "sprite":"https://webchinx.000webhostapp.com/media/pj/chinxtest/base.png",
           "chinx_sprite":urlHome+"/media/pj/chinx/chinx.png",
-          "shinx_gif":"https://raw.githubusercontent.com/ElChinx/CumpleChinx/main/media/shinx.gif",
+          "shinx_gif":"https://github.com/ElChinx/CumpleChinx/blob/main/media/shinx.gif?raw=true",
           "bg_dark":"https://raw.githubusercontent.com/ElChinx/CumpleChinx/main/media/bg/dark.png",
           "bg_email":urlHome+"/media/bg/1.png",
           "bg_emailopen":urlHome+"/media/bg/2.png",
@@ -114,6 +114,7 @@ var cdf = {
      "DoggadictoAlDogChauYALosWesos":"Joven Absolito",
      "tripaloskiTodoMio":"Joven Pinshinx Comunista",
      "ComoQueLilyNoSeApellidaOwO":"Joven Lily",
+     "SandiaQueTeAsaltaPorTuBarrio":"Joven Sandia Violenta"
 }
 
 var names = {
@@ -122,7 +123,7 @@ var names = {
      "moishinx":"¡Oh! ¡Moishinx! Cuanto tiempo sin verte",                                                                      //
      "DoggadictoALosWesos":"¡Oh! ¡Joven Riolu! Que bueno que vino",
      "ZorritoQueSeAmaneceCada2DiasDiarios":"¡Oh! ¡Un Zorrito! ¿Vienes por pastel?",
-     "JovenCubitoRockeroHeavyMetal":"Woa!!! Joven Cubito!!! Al fin puedo verlo en persona",
+     "JovenCubitoRockeroHeavyMetal":"Woa!!! un Cubito!!! Al fin puedo verlo en persona",
      "ShinxGrandoteQuePareceLuxio":"¡¡¡Es el Pequeño Shinx!!! El de Black Mesa",
      "FranShinxCOAsociados":"¡¡¡El Franshinx!!! Que bueno que llegaste Amigo",
      // segunda test
@@ -137,7 +138,8 @@ var names = {
      "DoggadictoAlDogChauYALosWesos":"Oh! es el Joven Absoluto! Debe haber agujeros en el jardin por buscar su hueso",
      "tripaloskiTodoMio":"Oh! Es Joven Pinshinx comunista socialista capitalista anarquista fascista liberalista o sepa que de religion sean",
      "ComoQueLilyNoSeApellidaOwO":"Oh! Es Lily y ahora mismo está haciendo la carita de OwO",
-     "ZorritoQueSoloDiceKyu":"Oh! es el Joven Zorrito que dice Kyu! Kyu-Bo!!"
+     "ZorritoQueSoloDiceKyu":"Oh! es el Joven Zorrito que dice Kyu! Kyu-Bo!!",
+     "SandiaQueTeAsaltaPorTuBarrio":"¡Con razón sentí que la estrellita se descontrolaba! ES USTED!"
 }
 
 var keys = {
