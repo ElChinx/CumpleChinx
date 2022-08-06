@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Staatliches', cursive;
+}
+
+@keyframes woo {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes rotate {from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(360deg);}
+  to {-webkit-transform: rotate(0deg);}}
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+.window{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.screen{
+    background-color: black;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-around; */
+}
+
+.front, .center, .back, .protector{
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+}
+
+/* FONDO */
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background:url("/media/bg/dark.png") ;
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+}
+
+
+.front{
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-around;
+} 
+
+.center{
+    z-index: 2;
+    position: absolute;
+} 
+
+.pjs,.board{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around; */
+}
+
+.board{
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.boardc{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 10vh
+}
+
+.pjs{
+    z-index: 5;
+}
+
+.pji,.pjd{
+    height: 45%;
+    width: 30%;
+    position: absolute;
+    bottom: 30%;
+}
+
+/* PERSONAJES */
+
+.pji{
+    /* background-color: red; */
+    height: 100%;
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    /* background-image: url(/media/pj1.png); */
+    /* background-size: 300%; */
+}
+
+.pjd{
+    /* background-color: green; */
+    right: 12%;
+    z-index: 2;
+    /* background-image: url(/media/pj2.png);
+    background-size: 300%; */
+}
+
+.back{
+    z-index: 0;
+}
+
+.caja{
+    background-color: black;
+    width: 75%;
+    height: 27%;
+    margin: 3%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+    user-select: none;
+}
+
+/*
+    PROTECTOR
+*/
+
+.protector{
+    z-index: 7;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: rgba(7, 0, 0,1);
+    border: 1px black solid;
+}
+
+.ini{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.spin{
+    border: white 1px solid;
+    border-radius: 50%;
+    width: 18%;
+    height: 25%;
+    margin-bottom: 5%;
+    -webkit-animation: 1s rotate linear infinite;
+    animation: 1s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    background: url("/media/shinx.gif");
+    background-size: 200%;
+    background-position: 50% 80%;   
+}
+
+.total{
+    width:100%;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.progre{
+    width: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+
+.noti{
+    width: 80%;
+    background-color: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.starting{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+#iniciarTesteo{
+    background-color: #fbff2c; /* Green */
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7%;
+}
+
+.control{
+    position:absolute;
+    color: black;
+    border-radius: 100%;
+    background-color: greenyellow;
+    text-align: center;
+    /* display: none; */
+    z-index: 8;
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 150vh) {
+    /* Height Superior */
+    .screen,.front, .center, .back, .protector{
+      width: 100vw;
+      height: 66vw;
+      /* background-color: red; */
+    }
+    
+    .caja{
+        padding: 2vw;
+        font-size: 3vw;
+        border: 1vw solid white;
+    }
+
+    .ini{
+        width: 80vw;
+        height: 56vw;
+    }
+/* 
+    .spin{
+        width: 10vw;
+        height: 10vw;
+    }
+     */
+    .progre{
+        font-size: 7vw;
+    }
+
+    #iniciarTesteo{
+        padding: 5vw;
+        font-size: 5vw;
+    }
+
+    .final{
+        padding-top: 55vw;
+        font-size: 9vw;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .co{
+        padding-bottom: 10vw;
+        color: white;
+        font-size: 4vw;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .sec{
+        color: white;
+        padding-bottom: 9vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-size:6vw;
+    }
+
+    .noti{
+        font-size: 4vw;
+    }
+
+    .control{
+        width: 8vw;
+        height: 8vw;
+        left: 2%;
+        top: 48%;
+        font-size: 3vw;
+        padding-top: 1.7vw;
+    }
+}
+
+@media only screen and (max-height: 66.66vw) {
+    /* Width Superior */
+    .screen,.front, .center, .back, .protector{
+        width: 150vh;
+        height: 100vh;
+        /* background-color: green; */
+    }
+
+    .caja{
+        padding: 2vh;
+        font-size: 4vh;
+        border: 1vh solid white;
+    }
+
+    .ini{
+        width: 110vh;
+        height: 80vh;
+    }
+
+    /* .spin{
+        width: 10vh;
+        height: 10vh;
+    } */
+
+    .progre{
+        font-size: 7vh;
+    }
+
+
+    #iniciarTesteo{
+        padding: 5vh;
+        font-size: 5vh;
+    }
+
+    .final{
+        padding-top: 55vh;
+        font-size: 9vh;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .co{
+        padding-bottom: 10vh;
+        color: white;
+        font-size: 4vh;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .sec{
+        color: white;
+        padding-bottom: 9vh;
+        font-size:6vh;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .noti{
+        font-size: 4vh;
+    }
+
+    .control{
+        width: 8vh;
+        height: 8vh;
+        left: 48%;
+        top: 2%;
+        font-size: 3vh;
+        padding-top: 1.7vh;
+    }
+}
+
+
+/* debug */
+
+.fps{
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+}
